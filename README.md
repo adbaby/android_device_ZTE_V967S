@@ -1,5 +1,4 @@
-android_device_ZTE_V967S
-========================
+ android_device_ZTE_V967S
 
 ZTE V967S device folder
 
