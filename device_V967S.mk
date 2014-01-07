@@ -15,7 +15,17 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel 
+    $(LOCAL_KERNEL):kernel
+
+# recovery
+PRODUCT_COPY_FILES += \
+    device/ZTE/V967S/recovery/factory_init.project.rc:recovery/root/factory_init.project.rc \
+    device/ZTE/V967S/recovery/factory_init.rc:recovery/root/factory_init.rc \
+    device/ZTE/V967S/recovery/fstab:recovery/root/fstab \
+    device/ZTE/V967S/recovery/meta_init.modem.rc:recovery/root/meta_init.modem.rc \
+    device/ZTE/V967S/recovery/meta_init.project.rc:recovery/root/meta_init.project.rc \
+    device/ZTE/V967S/recovery/meta_init.rc:recovery/root/meta_init.rc \
+    device/ZTE/V967S/recovery/ueventd.rc:recovery/root/ueventd.rc 
 
 PRODUCT_PACKAGES += \
     static_busybox \
